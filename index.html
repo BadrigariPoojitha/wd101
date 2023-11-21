@@ -2,51 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>USER REGISTRATION</title>
+  <title>User Registration</title>
   <style>
     table {
+      border-collapse: collapse;
       width: 100%;
     }
     th, td {
-      border: 2px solid #3B7EB5;
-      padding: 15px;
-      text-align: center;
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
     }
     th {
-      background-color: #ff6347
-      id="registrationForm">
-    <label for="name">Name:</label>
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <h1>User Registration Form</h1>
+  
+  <form id="registrationForm">
+    <label for="name">NAME:</label>
     <input type="text" id="name" required><br><br>
     
-    <label for="email">Email:</label>
+    <label for="email">EMAIL:</label>
     <input type="email" id="email" required><br><br>
     
-    <label for="password">Password:</label>
+    <label for="password">PASSWORD:</label>
     <input type="password" id="password" required><br><br>
     
-    <label for="dob">Date of Birth:</label>
+    <label for="dob">DOB:</label>
     <input type="date" id="dob" required><br><br>
     
-    <label for="terms">Accepted terms?</label>
+    <label for="terms">ACCEPTED TERMS?</label>
     <input type="checkbox" id="terms" required><br><br>
     
     <input type="submit" value="Submit">
   </form>
-  
-  <h2>Registered Users</h2>
+  <hr>
+  <h2>REGISTERED USERS DATA</h2>
   
   <table id="usersTable">
     <thead>
       <tr>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Password</th>
+        <th>NAME</th>
+        <th>EMAIL</th>
+        <th>PASSKEY</th>
         <th>DOB</th>
-        <th>Accepted terms?</th>
+        <th>ACCEPTED TERMS?</th>
       </tr>
     </thead>
     <tbody id="usersTableBody"></tbody>
   </table>
+  </center>
+  
 
   <script src="index.js"></script>
 </body>
